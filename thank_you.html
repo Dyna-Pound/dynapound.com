@@ -1,1 +1,82 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Thank You |</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+    <link rel="stylesheet" href="https://assets.alfieterry.co.uk/assets/css/pounder.css">
+    <script src="https://assets.alfieterry.co.uk/assets/js/main.js"></script>
+    <link rel="icon" href="https://assets.dynapound.com/assets/images/logo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://assets.dynapound.com/assets/images/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#1a1a1a',
+                        light: '#f8f9fa',
+                        accent: '#3b82f6'
+                    }
+                }
+            }
+        }
+    </script>
+
+  
+<body class="bg-dark text-light min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-xl font-bold text-blue-600">Dynapound</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-blue-600 bg-blue-50">Home</a>
+                        <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors">About</a>
+                        <a href="#services" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors">Services</a>
+                        <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 rounded-md text-gray-600 hover:text-blue-600 hover:bg-blue-50 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex items-center justify-center text-center px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-accent/10 to-dark/80 z-0"></div>
+        <div class="absolute inset-0 bg-[url('https://alfieterry.co.uk/morning-bg.jpg')] bg-cover bg-center opacity-20 z-0 jarallax" data-jarallax data-speed="0.5" lazy-background></div>
+        <div class="relative z-10">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Thank You!</h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8">Dynapound.com | Copyright 2025</p>
+        </div>
+    </section>
+
+    <!-- Other sections go here... -->
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-800 bg-dark/90 backdrop-blur-sm">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>© 2025 Alfie Sid Alan Terry. All rights reserved. | All images unless otherwise stated are owned by Alfie Terry</p>
+                <div class="flex space-x-6 mt-6 md:mt-0">
+                    <a href="https://www.tiktok.com/@alfie_terry" class="text-gray-400 hover:text-accent transition"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@Alfie_Terry" class="text-gray-400 hover:text-accent transition"><i class="fab fa-youtube"></i></a>
+                    <a href="https://github.com/AlfieTerryyy" class="text-gray-400 hover:text-accent transition"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
