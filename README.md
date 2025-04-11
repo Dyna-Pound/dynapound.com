@@ -1,3 +1,7 @@
+
+![Dynapound Logo](https://github.com/Dyna-Pound/dyna-pound/images/readme-head-large.png)
+
+
 # dynapound.com
 
 **dynapound.com** is a startup led by a team of young developers aiming to innovate the way people interact with technology — starting with smart, seamless tools for everyday users.
