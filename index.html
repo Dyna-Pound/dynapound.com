@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,562 +20,644 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://alfieterry.co.uk/parallax/jarallax.css">
   <link rel="stylesheet" href="https://assets.alfieterry.co.uk/assets/css/pounder.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jarallax@2.0.3/dist/jarallax.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jarallax@2.0.3/dist/jarallax.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jarallax@2.0.3/dist/jarallax-video.min.js"></script>
-    <style>
-        .jarallax-img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-        }
-        .text-shadow {
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-        .hover-scale {
-            transition: transform 0.3s ease;
-        }
-        .hover-scale:hover {
-            transform: scale(1.05);
-        }
-    </style>
+  <style>
+    .jarallax-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .text-shadow {
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
+
 <body class="font-inter antialiased text-gray-800">
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex-shrink-0">
-                    <span class="text-xl font-bold text-blue-600">Dynapound</span>
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-blue-600 bg-blue-50">Home</a>
-                        <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors">About</a>
-                        <a href="#services" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors">Services</a>
-                        <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors">Contact</a>
-                    </div>
-                </div>
-                <div class="md:hidden">
-                    <button class="mobile-menu-button p-2 rounded-md text-gray-600 hover:text-blue-600 hover:bg-blue-50 focus:outline-none">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-            </div>
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex-shrink-0">
+          <span class="text-xl font-bold text-blue-600">Dynapound</span>
         </div>
-    </nav>
-
-    <!-- Hero Section with Jarallax -->
-    <section class="relative h-screen flex items-center justify-center" data-jarallax data-speed="0.2">
-        <div class="jarallax-img" style="background-image: url('https://assets.dynapound.com/assets/images/bg.gif');"></div>
-        <div class="absolute inset-0 bg-black/30"></div>
-        <div class="container mx-auto px-4 text-center relative z-10">
-            <h1 class="text-4xl md:text-6xl font-bold text-white text-shadow mb-6">Dynapound.com</h1>
-            <p class="text-xl md:text-2xl text-white text-shadow mb-8 max-w-3xl mx-auto">We try our hardest and create the greatest.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#contact" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-lg hover-scale transition-all">Get Started</a>
-                <a href="#services" class="px-8 py-3 bg-white hover:bg-gray-100 text-blue-600 font-medium rounded-lg shadow-lg hover-scale transition-all">Our Services</a>
-            </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-blue-600 bg-blue-50">Home</a>
+            <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors">About</a>
+            <a href="#services" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors">Services</a>
+            <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors">Contact</a>
+          </div>
         </div>
-    </section>
+        <div class="md:hidden">
+          <button class="mobile-menu-button p-2 rounded-md text-gray-600 hover:text-blue-600 hover:bg-blue-50 focus:outline-none">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-<!-- About Section -->
-<section id="about" class="py-20 bg-gray-50">
+  <!-- Hero Section with Jarallax -->
+  <section class="relative h-screen flex items-center justify-center" data-jarallax data-speed="0.2">
+    <div class="jarallax-img" style="background-image: url('https://assets.dynapound.com/assets/images/bg.gif');"></div>
+    <div class="absolute inset-0 bg-black/30"></div>
+    <div class="container mx-auto px-4 text-center relative z-10">
+      <h1 class="text-4xl md:text-6xl font-bold text-white text-shadow mb-6">Dynapound.com</h1>
+      <p class="text-xl md:text-2xl text-white text-shadow mb-8 max-w-3xl mx-auto">We try our hardest and create the greatest.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#contact" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-lg hover-scale transition-all">Get Started</a>
+        <a href="#services" class="px-8 py-3 bg-white hover:bg-gray-100 text-blue-600 font-medium rounded-lg shadow-lg hover-scale transition-all">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-50">
     <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Us</h2>
-            <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Us</h2>
+        <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="relative rounded-xl overflow-hidden shadow-lg transform transition hover:scale-105">
+          <img src="https://assets.dynapound.com/assets/images/group.gif" alt="Our Team" class="w-full h-96 object-cover">
         </div>
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div class="relative rounded-xl overflow-hidden shadow-lg transform transition hover:scale-105">
-                <img src="https://assets.dynapound.com/assets/images/group.gif" 
-                     alt="Our Team" class="w-full h-96 object-cover">
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Who We Are</h3>
+          <p class="text-gray-600 mb-6">We're a team of passionate designers, developers, and strategists dedicated to creating digital experiences that make an impact. With years of industry experience, we combine creativity with technical expertise to deliver exceptional results.</p>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mt-1">
+                <i class="fas fa-check-circle text-blue-600"></i>
+              </div>
+              <p class="ml-3 text-gray-600">Custom solutions tailored to your business needs</p>
             </div>
-            <div>
-                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Who We Are</h3>
-                    <p class="text-gray-600 mb-6">We're a team of passionate designers, developers, and strategists dedicated to creating digital experiences that make an impact. With years of industry experience, we combine creativity with technical expertise to deliver exceptional results.</p>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i class="fas fa-check-circle text-blue-600"></i>
-                            </div>
-                            <p class="ml-3 text-gray-600">Custom solutions tailored to your business needs</p>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i class="fas fa-check-circle text-blue-600"></i>
-                            </div>
-                            <p class="ml-3 text-gray-600">Proven track record of successful projects</p>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i class="fas fa-check-circle text-blue-600"></i>
-                            </div>
-                            <p class="ml-3 text-gray-600">Transparent communication and collaboration</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mt-1">
+                <i class="fas fa-check-circle text-blue-600"></i>
+              </div>
+              <p class="ml-3 text-gray-600">Proven track record of successful projects</p>
             </div>
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mt-1">
+                <i class="fas fa-check-circle text-blue-600"></i>
+              </div>
+              <p class="ml-3 text-gray-600">Transparent communication and collaboration</p>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-
-     <!-- Divider 1 -->
-    <div class="section-divider divider-3 jarallax" data-jarallax data-speed="0.5" lazy-background></div>
+  <!-- Divider 1 -->
+  <div class="section-divider divider-3 jarallax" data-jarallax data-speed="0.5" lazy-background></div>
   <br>
-  <br>  
   <br>
-  <br> 
   <br>
-  <br> 
   <br>
-  <br> 
+  <br>
+  <br>
+  <br>
+  <br>
   <!-- Pricing Section -->
 
-<svg id="ewV4W8Erq3e1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1990 400" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" project-id="a87b75a905ae4543ac0027e5b2d1e7a2" export-id="f83457a1d02d418aaeb52f5a2a4e2bf0" cached="false"><g transform="matrix(-.999991-.004133 0.004133-.999991 2036.87031 521.495668)"><g transform="translate(35.590298 104.099293)"><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 143.966768-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 469.308236-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 794.649704-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1119.991172-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1770.674108-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><rect width="48" height="48" rx="6.22" ry="6.22" transform="matrix(105.46457 0 0 10.123492-2099.450846-314.878226)" fill="#394764"/></g><g transform="translate(35.590091 35.675232)"><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 143.966768-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 469.308236-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 794.649704-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1119.991172-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1770.674108-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><rect width="48" height="48" rx="6.22" ry="6.22" transform="matrix(105.46457 0 0 10.123492-2099.450846-314.878226)" fill="#232e47"/></g><g transform="translate(35.590194-17.106015)"><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 143.966768-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 469.308236-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 794.649704-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1119.991172-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1770.674108-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><rect width="48" height="48" rx="6.22" ry="6.22" transform="matrix(105.46457 0 0 10.123492-2099.450846-314.878226)" fill="#111827"/></g></g></svg>
+  <svg id="ewV4W8Erq3e1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1990 400" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" project-id="a87b75a905ae4543ac0027e5b2d1e7a2" export-id="f83457a1d02d418aaeb52f5a2a4e2bf0" cached="false">
+    <g transform="matrix(-.999991-.004133 0.004133-.999991 2036.87031 521.495668)">
+      <g transform="translate(35.590298 104.099293)">
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 143.966768-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 469.308236-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 794.649704-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1119.991172-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1770.674108-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <rect width="48" height="48" rx="6.22" ry="6.22" transform="matrix(105.46457 0 0 10.123492-2099.450846-314.878226)" fill="#394764" />
+      </g>
+      <g transform="translate(35.590091 35.675232)">
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 143.966768-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 469.308236-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 794.649704-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1119.991172-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1770.674108-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <rect width="48" height="48" rx="6.22" ry="6.22" transform="matrix(105.46457 0 0 10.123492-2099.450846-314.878226)" fill="#232e47" />
+      </g>
+      <g transform="translate(35.590194-17.106015)">
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 143.966768-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 469.308236-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 794.649704-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1119.991172-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1770.674108-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <rect width="48" height="48" rx="6.22" ry="6.22" transform="matrix(105.46457 0 0 10.123492-2099.450846-314.878226)" fill="#111827" />
+      </g>
+    </g>
+  </svg>
 
-
-
-  
-<section id="pricing" class="py-24 bg-gray-900 backdrop-blur-lg text-white">
+  <section id="pricing" class="py-24 bg-gray-900 backdrop-blur-lg text-white">
     <div class="container mx-auto px-6 text-center">
-        <h2 class="text-4xl font-extrabold mb-12">Website Pricing</h2>
-        <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-10">
-            Choose a plan that fits your needs! Whether you want a personal blog, a portfolio, or a small online shop, we’ve got you covered.
-        </p>
-        <div class="grid md:grid-cols-3 gap-10">
-            <!-- Basic Package -->
-            <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-blue-500 transition-all shadow-lg transform hover:scale-105">
-                <h3 class="text-2xl font-bold mb-4">Basic</h3>
-                <p class="text-gray-400 mb-6">Great for personal projects or school assignments.</p>
-                <ul class="text-gray-300 mb-6 space-y-2">
-                    <li>&#10003; Up to 3 pages</li>
-                    <li>&#10003; Mobile-friendly design</li>
-                    <li>&#10003; Basic SEO assistance</li>
-                </ul>
-                <p class="text-3xl font-bold mb-6">£40</p>
-                <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition font-semibold">Get Started</a>
-            </div>
-            <!-- Standard Package -->
-            <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-blue-500 transition-all shadow-lg transform hover:scale-105">
-                <h3 class="text-2xl font-bold mb-4">Standard</h3>
-                <p class="text-gray-400 mb-6">Perfect for a small online shop or portfolio.</p>
-                <ul class="text-gray-300 mb-6 space-y-2">
-                    <li>&#10003; Up to 5 pages</li>
-                    <li>&#10003; Mobile-friendly design</li>
-                    <li>&#10003; Enhanced SEO & performance</li>
-                </ul>
-                <p class="text-3xl font-bold mb-6">£60</p>
-                <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition font-semibold">Get Started</a>
-            </div>
-            <!-- Premium Package -->
-            <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-blue-500 transition-all shadow-lg transform hover:scale-105">
-                <h3 class="text-2xl font-bold mb-4">Premium</h3>
-                <p class="text-gray-400 mb-6">For those who want a fully custom site with advanced features.</p>
-                <ul class="text-gray-300 mb-6 space-y-2">
-                    <li>&#10003; Fully custom design</li>
-                    <li>&#10003; Advanced mobile-friendly design</li>
-                    <li>&#10003; Advanced SEO & superior performance</li>
-                </ul>
-                <p class="text-3xl font-bold mb-6">£80+</p>
-                <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition font-semibold">Get Started</a>
-            </div>
+      <h2 class="text-4xl font-extrabold mb-12">Website Pricing</h2>
+      <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-10">
+        Choose a plan that fits your needs! Whether you want a personal blog, a portfolio, or a small online shop, we’ve got you covered.
+      </p>
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Basic Package -->
+        <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-blue-500 transition-all shadow-lg transform hover:scale-105">
+          <h3 class="text-2xl font-bold mb-4">Basic</h3>
+          <p class="text-gray-400 mb-6">Great for personal projects or school assignments.</p>
+          <ul class="text-gray-300 mb-6 space-y-2">
+            <li>&#10003; Up to 3 pages</li>
+            <li>&#10003; Mobile-friendly design</li>
+            <li>&#10003; Basic SEO assistance</li>
+          </ul>
+          <p class="text-3xl font-bold mb-6">£40</p>
+          <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition font-semibold">Get Started</a>
         </div>
+        <!-- Standard Package -->
+        <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-blue-500 transition-all shadow-lg transform hover:scale-105">
+          <h3 class="text-2xl font-bold mb-4">Standard</h3>
+          <p class="text-gray-400 mb-6">Perfect for a small online shop or portfolio.</p>
+          <ul class="text-gray-300 mb-6 space-y-2">
+            <li>&#10003; Up to 5 pages</li>
+            <li>&#10003; Mobile-friendly design</li>
+            <li>&#10003; Enhanced SEO & performance</li>
+          </ul>
+          <p class="text-3xl font-bold mb-6">£60</p>
+          <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition font-semibold">Get Started</a>
+        </div>
+        <!-- Premium Package -->
+        <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-blue-500 transition-all shadow-lg transform hover:scale-105">
+          <h3 class="text-2xl font-bold mb-4">Premium</h3>
+          <p class="text-gray-400 mb-6">For those who want a fully custom site with advanced features.</p>
+          <ul class="text-gray-300 mb-6 space-y-2">
+            <li>&#10003; Fully custom design</li>
+            <li>&#10003; Advanced mobile-friendly design</li>
+            <li>&#10003; Advanced SEO & superior performance</li>
+          </ul>
+          <p class="text-3xl font-bold mb-6">£80+</p>
+          <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition font-semibold">Get Started</a>
+        </div>
+      </div>
     </div>
-  
-</section>
 
-<svg id="e38iXmrj9Mw1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1990 400" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" project-id="a87b75a905ae4543ac0027e5b2d1e7a2" export-id="5e0f05774aa94c619f9f3f2fe45609e4" cached="false"><g transform="translate(35.590298 104.099293)"><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 143.966768-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 469.308236-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 794.649704-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1119.991172-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1770.674108-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><rect width="48" height="48" rx="6.22" ry="6.22" transform="matrix(105.46457 0 0 10.123492-2099.450846-314.878226)" fill="#394764"/></g><g transform="translate(35.590091 35.675232)"><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 143.966768-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 469.308236-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 794.649704-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1119.991172-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1770.674108-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><rect width="48" height="48" rx="6.22" ry="6.22" transform="matrix(105.46457 0 0 10.123492-2099.450846-314.878226)" fill="#232e47"/></g><g transform="translate(35.590194-17.106015)"><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 143.966768-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 469.308236-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 794.649704-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1119.991172-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1770.674108-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><rect width="48" height="48" rx="6.22" ry="6.22" transform="matrix(105.46457 0 0 10.123492-2099.450846-314.878226)" fill="#111827"/></g></svg>
+  </section>
 
+  <svg id="e38iXmrj9Mw1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1990 400" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" project-id="a87b75a905ae4543ac0027e5b2d1e7a2" export-id="5e0f05774aa94c619f9f3f2fe45609e4" cached="false">
+    <g transform="translate(35.590298 104.099293)">
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 143.966768-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 469.308236-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 794.649704-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1119.991172-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1770.674108-17.6387)" fill="#394764" stroke="#394764" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <rect width="48" height="48" rx="6.22" ry="6.22" transform="matrix(105.46457 0 0 10.123492-2099.450846-314.878226)" fill="#394764" />
+    </g>
+    <g transform="translate(35.590091 35.675232)">
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 143.966768-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 469.308236-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 794.649704-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1119.991172-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1770.674108-17.6387)" fill="#232e47" stroke="#232e47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <rect width="48" height="48" rx="6.22" ry="6.22" transform="matrix(105.46457 0 0 10.123492-2099.450846-314.878226)" fill="#232e47" />
+    </g>
+    <g transform="translate(35.590194-17.106015)">
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 143.966768-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774-181.3747-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 469.308236-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 794.649704-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1119.991172-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1445.33264-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.79,40C31.4,40,31.4,60,50,60s18.6-20,37.21-20" transform="matrix(4.371694 0 0 4.352774 1770.674108-17.6387)" fill="#111827" stroke="#111827" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <rect width="48" height="48" rx="6.22" ry="6.22" transform="matrix(105.46457 0 0 10.123492-2099.450846-314.878226)" fill="#111827" />
+    </g>
+  </svg>
 
-  
-</section>
-  
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Projects</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale transition-all">
-                    <div class="h-48 bg-gray-800 overflow-hidden">
-                        <img src="https://assets.dynapound.com/assets/images/empty.png" 
-                             alt="Project 1" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500 jarallax" data-jarallax data-speed="0.5" lazy-background>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Updating Soon</h3>
-                        <p class="text-gray-600">. . .</p>
-                        <a href="https://dynapound.com" class="text-accent hover:underline">View Project →</a>
-                    </div>
-                </div>
-                
-                <!-- Service 2 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale transition-all">
-                    <div class="h-48 bg-gray-800 overflow-hidden">
-                        <img src="https://assets.dynapound.com/assets/images/empty.png" 
-                             alt="Project 1" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500 jarallax" data-jarallax data-speed="0.5" lazy-background>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Updating Soon</h3>
-                        <p class="text-gray-600">. . .</p>
-                        <a href="https://dynapound.com" class="text-accent hover:underline">View Project →</a>
-                    </div>
-                </div>
-                
-                <!-- Service 3 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale transition-all">
-                    <div class="h-48 bg-gray-800 overflow-hidden">
-                        <img src="https://assets.dynapound.com/assets/images/empty.png" 
-                             alt="Project 1" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500 jarallax" data-jarallax data-speed="0.5" lazy-background>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Updating Soon</h3>
-                        <p class="text-gray-600">. . .</p>
-                        <a href="https://dynapound.com" class="text-accent hover:underline">View Project →</a>
-                    </div>
-                </div>
-            </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Projects</h2>
+        <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale transition-all">
+          <div class="h-48 bg-gray-800 overflow-hidden">
+            <img src="https://assets.dynapound.com/assets/images/empty.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 jarallax" data-jarallax data-speed="0.5" lazy-background>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Updating Soon</h3>
+            <p class="text-gray-600">. . .</p>
+            <a href="https://dynapound.com" class="text-accent hover:underline">View Project →</a>
+          </div>
         </div>
-    </section>
 
-      <!-- Divider 1 -->
-    <div class="section-divider divider-2 jarallax" data-jarallax data-speed="0.5" lazy-background></div>
-  
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale transition-all">
-                    <div class="h-48 bg-blue-600 flex items-center justify-center">
-                        <i class="fas fa-code text-white text-5xl"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Web Development</h3>
-                        <p class="text-gray-600">Custom websites and web applications built with modern technologies for optimal performance and user experience.</p>
-                    </div>
-                </div>
-                
-                <!-- Service 2 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale transition-all">
-                    <div class="h-48 bg-blue-600 flex items-center justify-center">
-                        <i class="fas fa-paint-brush text-white text-5xl"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Digital Desighn</h3>
-                        <p class="text-gray-600">Beautiful, intuitive interfaces designed to engage users and drive conversions.</p>
-                    </div>
-                </div>
-                
-                <!-- Service 3 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale transition-all">
-                    <div class="h-48 bg-blue-600 flex items-center justify-center">
-                        <i class="fas fa-chart-line text-white text-5xl"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Software Developement</h3>
-                        <p class="text-gray-600">Comprehensive strategies to increase your online visibility and attract more customers.</p>
-                    </div>
-                </div>
-            </div>
+        <!-- Service 2 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale transition-all">
+          <div class="h-48 bg-gray-800 overflow-hidden">
+            <img src="https://assets.dynapound.com/assets/images/empty.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 jarallax" data-jarallax data-speed="0.5" lazy-background>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Updating Soon</h3>
+            <p class="text-gray-600">. . .</p>
+            <a href="https://dynapound.com" class="text-accent hover:underline">View Project →</a>
+          </div>
         </div>
-    </section>
 
-  
-
-<!-- Projects we've Worked On -->
-    <section id="work" class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Projects we've Worked On</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                    <div class="h-48 mb-4 overflow-hidden rounded-lg">
-                        <img src="https://assets.dynapound.com/assets/images/group.gif" 
-                             alt="Four Paws" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500 jarallax" data-jarallax data-speed="0.5" lazy-background>
-                    </div>
-                    <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3">Dynapound.com</h3>
-                    <p class="text-xl font-semibold text-gray-900 mb-2">Were a group of young developers that make software for almost any purpose</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs px-2 py-1 bg-orange-100 text-orange-800 rounded">HTML</span>
-                            <span class="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded">Tailwind css</span>
-                            <span class="text-xs px-2 py-1 bg-yellow-100 text-yellow-800 rounded">JavaScript</span>
-                        </div>
-                    <p class="text-gray-600 mb-4"><small>Fair rights between all members</small></p>
-                    <a href="https://paws.alfieterry.co.uk/" class="text-accent hover:underline">View Project →</a>
-                    </div>
-                  </div>
-                <!-- Project 2 -->
-                  <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                    <div class="h-48 mb-4 overflow-hidden rounded-lg">
-                        <img src="https://paws.alfieterry.co.uk/assets/images/logo.jpg" 
-                             alt="Four Paws" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500 jarallax" data-jarallax data-speed="0.5" lazy-background>
-                    </div>
-                    <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3">Four Paws Website</h3>
-                    <p class="text-xl font-semibold text-gray-900 mb-2">A company website for a local dog walking service</p>
-                            <div class="flex flex-wrap gap-2">
-                            <span class="text-xs px-2 py-1 bg-orange-100 text-orange-800 rounded">HTML</span>
-                            <span class="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded">CSS</span>
-                            <span class="text-xs px-2 py-1 bg-yellow-100 text-yellow-800 rounded">JavaScript</span>
-                        </div>
-                    <p class="text-gray-600 mb-4"><small>Logo is property of Lia Clark</small></p>
-                    <a href="https://paws.alfieterry.co.uk/" class="text-accent hover:underline">View Project →</a>
-                    </div>
-                  </div>
-                <!-- Project 3 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                    <div class="h-48 bg-gradient-to-r from-purple-400 to-pink-500"></div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Updating Soon...</h3>
-                        <p class="text-gray-600 mb-4">Updating Soon....</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded">...</span>
-                            <span class="text-xs px-2 py-1 bg-yellow-100 text-yellow-800 rounded">...</span>
-                        </div>
-                    </div>
-                  </div>
-            <div class="text-center mt-12">
-                <a href="#" class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 transition">View All Projects</a>
-            </div>
+        <!-- Service 3 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale transition-all">
+          <div class="h-48 bg-gray-800 overflow-hidden">
+            <img src="https://assets.dynapound.com/assets/images/empty.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 jarallax" data-jarallax data-speed="0.5" lazy-background>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Updating Soon</h3>
+            <p class="text-gray-600">. . .</p>
+            <a href="https://dynapound.com" class="text-accent hover:underline">View Project →</a>
+          </div>
         </div>
-  </div>
-    </section>
-  
-      <!-- Divider 1 -->
-    <div class="section-divider divider-1 jarallax" data-jarallax data-speed="0.5" lazy-background></div>
-  
-    <!-- Partners Section -->
-    <section id="partners" class="py-20 bg-dark/70 backdrop-blur-sm">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center">Developers' Sites</h2>
-            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <!-- Alfie Terry -->
-                <div class="text-center">
-                    <div class="bg-gray-800 rounded-full w-32 h-32 mx-auto mb-4 overflow-hidden border-2 border-accent/50">
-                        <img src="https://assets.alfieterry.co.uk/assets/images/logo.png" 
-                             alt="Alfie Terry" 
-                             class="w-full h-full object-cover jarallax" data-jarallax data-speed="0.5" lazy-background>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Alfie Terry</h3>
-                    <p class="text-gray-400 mb-3">Web Developer</p>
-                    <p class="text-gray-400 mb-3"><small>Logo is property of Alfie Terry</small></p>
-                    <a href="https://alfieterry.co.uk/#contact" class="text-accent hover:underline">Contact →</a>
-                    <a href="https://alfieterry.co.uk" class="text-accent hover:underline">Visit Site →</a>
-                </div>
-                <!-- Lawri Darbyshire -->
-                <div class="text-center">
-                    <div class="bg-gray-800 rounded-full w-32 h-32 mx-auto mb-4 overflow-hidden border-2 border-accent/50">
-                        <img src="https://benmaskell.co.uk/assets/images/favicon.png-48x48.png"
-                             alt="Lawri Darbyshire" 
-                             class="w-full h-full object-cover jarallax" data-jarallax data-speed="0.5" lazy-background>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Lawri Darbyshire</h3>
-                    <p class="text-gray-400 mb-3">Software Developer</p>
-                    <p class="text-gray-400 mb-3"><small>Logo is property of Lawri Darbyshire</small></p>
-                    <a href="https://lawridarbyshire.co.uk/contact" class="text-accent hover:underline">Contact →</a>
-                    <a href="https://lawridarbyshire.co.uk/" class="text-accent hover:underline">Visit Site →</a>
-                </div>
-                <!-- Ben Maskell -->
-                <div class="text-center">
-                    <div class="bg-gray-800 rounded-full w-32 h-32 mx-auto mb-4 overflow-hidden border-2 border-accent/50">
-                        <img src="https://alfieterry.co.uk/benmaskell-logo.jpg" 
-                             alt="Ben Maskell" 
-                             class="w-full h-full object-cover jarallax" data-jarallax data-speed="0.5" lazy-background>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Ben Maskell</h3>
-                    <p class="text-gray-400 mb-3">Software Management</p>
-                    <p class="text-gray-400 mb-3"><small>Logo is property of Ben Maskell</small></p>
-                    <a href="https://benmaskell.co.uk/contact" class="text-accent hover:underline">Contact →</a>
-                    <a href="https://benmaskell.co.uk/" class="text-accent hover:underline">Visit Site →</a>
-                </div>
-               <!-- Tom Collis -->
-                <div class="text-center">
-                    <div class="bg-gray-800 rounded-full w-32 h-32 mx-auto mb-4 overflow-hidden border-2 border-accent/50">
-                        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
-                             alt="Tom Collis" 
-                             class="w-full h-full object-cover jarallax" data-jarallax data-speed="0.5" lazy-background>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Tom Collis</h3>
-                    <p class="text-gray-400 mb-3">Software Developer</p>
-                    <p class="text-gray-400 mb-3"><small>Logo is property of Github</small></p>
-                    <a href="https://github.com/Tom-C-The-Dev" class="text-accent hover:underline">Visit Site →</a>
-                </div>
-                         <!-- Dylan Griffiths -->
-                <div class="text-center">
-                    <div class="bg-gray-800 rounded-full w-32 h-32 mx-auto mb-4 overflow-hidden border-2 border-accent/50">
-                        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
-                             alt="Tom Collis" 
-                             class="w-full h-full object-cover jarallax" data-jarallax data-speed="0.5" lazy-background>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Dylan Griffiths</h3>
-                    <p class="text-gray-400 mb-3">Na</p>
-                    <p class="text-gray-400 mb-3"><small>Logo is property of Github</small></p>
-                    <a href="https://page.alfieterry.co.uk/g/dylan" class="text-accent hover:underline">Visit Site →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-  
-  
-        <!-- Contact Section -->
-
-
-
-<svg id="ebkpLOjlcaf1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 889 200" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" project-id="a87b75a905ae4543ac0027e5b2d1e7a2" export-id="fb9692d71171436c9fd9a25aa6ed6247" cached="false"><g transform="matrix(1.6511-.740862 0.636639 1.418825-278.458964 5.837957)"><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 926.686121-494.856371)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 865.794785-452.374044)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 819.064226-429.716802)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 782.246212-382.986242)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 926.686121-494.856371)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="matrix(1.6511-.740862 0.636639 1.418825-386.080862 141.394517)"><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 926.686121-494.856371)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 865.794785-452.374044)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 819.064226-429.716802)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 782.246212-382.986242)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 926.686121-494.856371)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
-
-
-  
-    <section id="contact" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                   <h3 class="text-2xl font-semibold text-gray-800 mb-6">Contact Information</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i class="fas fa-map-marker-alt text-blue-600"></i>
-                            </div>
-                            <p class="ml-3 text-gray-600">Westberkshire<br>United Kingdom</p>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i class="fas fa-envelope text-blue-600"></i>
-                            </div>
-                            <p class="ml-3 text-gray-600">contact@benmaskell.co.uk</p>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i class="fas fa-envelope text-blue-600"></i>
-                            </div>
-                            <p class="ml-3 text-gray-600">lawri@lawridarbyshire.co.uk</p>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i class="fas fa-envelope text-blue-600"></i>
-                            </div>
-                            <p class="ml-3 text-gray-600">talfie7243@gmail.com</p>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i class="fas fa-envelope text-blue-600"></i>
-                            </div>
-                            <p class="ml-3 text-gray-600">dynapound@gmail.com</p>
-                        </div
-                 </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <i class="fas fa-phone text-blue-600"></i>
-                            </div>
-                            <p class="ml-3 text-gray-600">+44 7946 358290</p>
-                        </div>
-                    </div>
-                    <div class="mt-8">
-                        <h4 class="text-lg font-semibold text-gray-800 mb-4">Follow Us</h4>
-                        <div class="flex space-x-4">
-                            <a href="https://github.com/Dyna-Pound/" target="_blank" class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition-colors">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://tiktok.com/@dynapound" target="_blank" class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition-colors">
-                                <i class="fab fa-tiktok"></i>
-                            </a>
-                            <a href="https://youtube.com/@dynapound" target="_blank" class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition-colors">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-<form action="https://script.google.com/macros/s/AKfycbyEF_8cUcs8faYgVBLX2nCjZB4qoeIphvJlR_HVYs8pRxfIjXsFqKmrOKpg2bz0OXzU4Q/exec" method="POST" class="bg-white p-8 rounded-xl shadow-lg">
-      <input type="hidden" name="_next" value="https://dynapound.com/thank-you">
-    <div class="mb-6">
-        <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
-        <input type="text" name="name" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" required>
+      </div>
     </div>
-    <div class="mb-6">
-      <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-        <input type="email" name="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" required>
-    </div>
-    <div class="mb-6">
-        <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
-        <textarea name="message" id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" required></textarea>
-    </div>
-    
-    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg shadow-lg transition-all">
-        Send Message
-    </button>
-</form>
-            </div>
+  </section>
+
+  <!-- Divider 1 -->
+  <div class="section-divider divider-2 jarallax" data-jarallax data-speed="0.5" lazy-background></div>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+        <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale transition-all">
+          <div class="h-48 bg-blue-600 flex items-center justify-center">
+            <i class="fas fa-code text-white text-5xl"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Web Development</h3>
+            <p class="text-gray-600">Custom websites and web applications built with modern technologies for optimal performance and user experience.</p>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
+        <!-- Service 2 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale transition-all">
+          <div class="h-48 bg-blue-600 flex items-center justify-center">
+            <i class="fas fa-paint-brush text-white text-5xl"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Digital Desighn</h3>
+            <p class="text-gray-600">Beautiful, intuitive interfaces designed to engage users and drive conversions.</p>
+          </div>
+        </div>
 
+        <!-- Service 3 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale transition-all">
+          <div class="h-48 bg-blue-600 flex items-center justify-center">
+            <i class="fas fa-chart-line text-white text-5xl"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Software Developement</h3>
+            <p class="text-gray-600">Comprehensive strategies to increase your online visibility and attract more customers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Projects we've Worked On -->
+  <section id="work" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Projects we've Worked On</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+          <div class="h-48 mb-4 overflow-hidden rounded-lg">
+            <img src="https://assets.dynapound.com/assets/images/group.gif" alt="Four Paws" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 jarallax" data-jarallax data-speed="0.5" lazy-background>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">Dynapound.com</h3>
+            <p class="text-xl font-semibold text-gray-900 mb-2">Were a group of young developers that make software for almost any purpose</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs px-2 py-1 bg-orange-100 text-orange-800 rounded">HTML</span>
+              <span class="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded">Tailwind css</span>
+              <span class="text-xs px-2 py-1 bg-yellow-100 text-yellow-800 rounded">JavaScript</span>
+            </div>
+            <p class="text-gray-600 mb-4"><small>Fair rights between all members</small></p>
+            <a href="https://paws.alfieterry.co.uk/" class="text-accent hover:underline">View Project →</a>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+          <div class="h-48 mb-4 overflow-hidden rounded-lg">
+            <img src="https://paws.alfieterry.co.uk/assets/images/logo.jpg" alt="Four Paws" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 jarallax" data-jarallax data-speed="0.5" lazy-background>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">Four Paws Website</h3>
+            <p class="text-xl font-semibold text-gray-900 mb-2">A company website for a local dog walking service</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs px-2 py-1 bg-orange-100 text-orange-800 rounded">HTML</span>
+              <span class="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded">CSS</span>
+              <span class="text-xs px-2 py-1 bg-yellow-100 text-yellow-800 rounded">JavaScript</span>
+            </div>
+            <p class="text-gray-600 mb-4"><small>Logo is property of Lia Clark</small></p>
+            <a href="https://paws.alfieterry.co.uk/" class="text-accent hover:underline">View Project →</a>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+          <div class="h-48 bg-gradient-to-r from-purple-400 to-pink-500"></div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Updating Soon...</h3>
+            <p class="text-gray-600 mb-4">Updating Soon....</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded">...</span>
+              <span class="text-xs px-2 py-1 bg-yellow-100 text-yellow-800 rounded">...</span>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <a href="#" class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 transition">View All Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<svg id="eCKh6JqPkQn1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 889 200" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" project-id="a87b75a905ae4543ac0027e5b2d1e7a2" export-id="81a809fb972d43d4bffce54dd0be6826" cached="false" style="background-color:#f9fafb"><g transform="matrix(1.176383-.159353 0.154646 1.141629-60.35732-97.347962)"><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 926.686121-494.856371)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 865.794785-452.374044)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 819.064226-429.716802)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 782.246212-382.986242)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 926.686121-494.856371)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g><g transform="matrix(1.176383-.159353 0.154646 1.141629-167.979218 38.208598)"><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 926.686121-494.856371)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 865.794785-452.374044)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 819.064226-429.716802)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 782.246212-382.986242)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 926.686121-494.856371)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+  <!-- Divider 1 -->
+  <div class="section-divider divider-1 jarallax" data-jarallax data-speed="0.5" lazy-background></div>
 
+  <!-- Partners Section -->
+  <section id="partners" class="py-20 bg-dark/70 backdrop-blur-sm">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-12 text-center">Developers' Sites</h2>
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Alfie Terry -->
+        <div class="text-center">
+          <div class="bg-gray-800 rounded-full w-32 h-32 mx-auto mb-4 overflow-hidden border-2 border-accent/50">
+            <img src="https://assets.alfieterry.co.uk/assets/images/logo.png" alt="Alfie Terry" class="w-full h-full object-cover jarallax" data-jarallax data-speed="0.5" lazy-background>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Alfie Terry</h3>
+          <p class="text-gray-400 mb-3">Web Developer</p>
+          <p class="text-gray-400 mb-3"><small>Logo is property of Alfie Terry</small></p>
+          <a href="https://alfieterry.co.uk/#contact" class="text-accent hover:underline">Contact →</a>
+          <a href="https://alfieterry.co.uk" class="text-accent hover:underline">Visit Site →</a>
+        </div>
+        <!-- Lawri Darbyshire -->
+        <div class="text-center">
+          <div class="bg-gray-800 rounded-full w-32 h-32 mx-auto mb-4 overflow-hidden border-2 border-accent/50">
+            <img src="https://benmaskell.co.uk/assets/images/favicon.png-48x48.png" alt="Lawri Darbyshire" class="w-full h-full object-cover jarallax" data-jarallax data-speed="0.5" lazy-background>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Lawri Darbyshire</h3>
+          <p class="text-gray-400 mb-3">Software Developer</p>
+          <p class="text-gray-400 mb-3"><small>Logo is property of Lawri Darbyshire</small></p>
+          <a href="https://lawridarbyshire.co.uk/contact" class="text-accent hover:underline">Contact →</a>
+          <a href="https://lawridarbyshire.co.uk/" class="text-accent hover:underline">Visit Site →</a>
+        </div>
+        <!-- Ben Maskell -->
+        <div class="text-center">
+          <div class="bg-gray-800 rounded-full w-32 h-32 mx-auto mb-4 overflow-hidden border-2 border-accent/50">
+            <img src="https://alfieterry.co.uk/benmaskell-logo.jpg" alt="Ben Maskell" class="w-full h-full object-cover jarallax" data-jarallax data-speed="0.5" lazy-background>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Ben Maskell</h3>
+          <p class="text-gray-400 mb-3">Software Management</p>
+          <p class="text-gray-400 mb-3"><small>Logo is property of Ben Maskell</small></p>
+          <a href="https://benmaskell.co.uk/contact" class="text-accent hover:underline">Contact →</a>
+          <a href="https://benmaskell.co.uk/" class="text-accent hover:underline">Visit Site →</a>
+        </div>
+        <!-- Tom Collis -->
+        <div class="text-center">
+          <div class="bg-gray-800 rounded-full w-32 h-32 mx-auto mb-4 overflow-hidden border-2 border-accent/50">
+            <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="Tom Collis" class="w-full h-full object-cover jarallax" data-jarallax data-speed="0.5" lazy-background>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Tom Collis</h3>
+          <p class="text-gray-400 mb-3">Software Developer</p>
+          <p class="text-gray-400 mb-3"><small>Logo is property of Github</small></p>
+          <a href="https://github.com/Tom-C-The-Dev" class="text-accent hover:underline">Visit Site →</a>
+        </div>
+        <!-- Dylan Griffiths -->
+        <div class="text-center">
+          <div class="bg-gray-800 rounded-full w-32 h-32 mx-auto mb-4 overflow-hidden border-2 border-accent/50">
+            <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="Tom Collis" class="w-full h-full object-cover jarallax" data-jarallax data-speed="0.5" lazy-background>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Dylan Griffiths</h3>
+          <p class="text-gray-400 mb-3">Na</p>
+          <p class="text-gray-400 mb-3"><small>Logo is property of Github</small></p>
+          <a href="https://page.alfieterry.co.uk/g/dylan" class="text-accent hover:underline">Visit Site →</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Contact Section -->
 
-  
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Dynapound</h3>
-                    <p class="text-gray-400">We try our hardest and create the greatest.</p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
-                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Services</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Web Development</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Software Developement</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Digital Desighn</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Devs</h4>
-                    <ul class="space-y-2">
-                        <li><a href="https://alfieterry.co.uk" class="text-gray-400 hover:text-white transition-colors">Alfie Terry</a></li>
-                        <li><a href="https://lawridarbyshire.co.uk" class="text-gray-400 hover:text-white transition-colors">Lawri Darbyshire</a></li>
-                        <li><a href="https://benmaskell.co.uk" class="text-gray-400 hover:text-white transition-colors">Ben Maskell</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Tom Collis</a></li>
-                    </ul>
-                </div>
-                <!--- div>
+  <svg id="ebkpLOjlcaf1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 889 200" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" project-id="a87b75a905ae4543ac0027e5b2d1e7a2" export-id="fb9692d71171436c9fd9a25aa6ed6247" cached="false">
+    <g transform="matrix(1.6511-.740862 0.636639 1.418825-278.458964 5.837957)">
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 926.686121-494.856371)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 865.794785-452.374044)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 819.064226-429.716802)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 782.246212-382.986242)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 926.686121-494.856371)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <g transform="matrix(1.6511-.740862 0.636639 1.418825-386.080862 141.394517)">
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 926.686121-494.856371)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 865.794785-452.374044)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 819.064226-429.716802)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 782.246212-382.986242)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 926.686121-494.856371)" fill="none" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </svg>
+
+  <section id="contact" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+        <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-6">Contact Information</h3>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mt-1">
+                <i class="fas fa-map-marker-alt text-blue-600"></i>
+              </div>
+              <p class="ml-3 text-gray-600">Westberkshire<br>United Kingdom</p>
+            </div>
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mt-1">
+                <i class="fas fa-envelope text-blue-600"></i>
+              </div>
+              <p class="ml-3 text-gray-600">contact@benmaskell.co.uk</p>
+            </div>
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mt-1">
+                <i class="fas fa-envelope text-blue-600"></i>
+              </div>
+              <p class="ml-3 text-gray-600">lawri@lawridarbyshire.co.uk</p>
+            </div>
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mt-1">
+                <i class="fas fa-envelope text-blue-600"></i>
+              </div>
+              <p class="ml-3 text-gray-600">talfie7243@gmail.com</p>
+            </div>
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mt-1">
+                <i class="fas fa-envelope text-blue-600"></i>
+              </div>
+              <p class="ml-3 text-gray-600">dynapound@gmail.com</p>
+            </div </div>
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mt-1">
+                <i class="fas fa-phone text-blue-600"></i>
+              </div>
+              <p class="ml-3 text-gray-600">+44 7946 358290</p>
+            </div>
+          </div>
+          <div class="mt-8">
+            <h4 class="text-lg font-semibold text-gray-800 mb-4">Follow Us</h4>
+            <div class="flex space-x-4">
+              <a href="https://github.com/Dyna-Pound/" target="_blank" class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition-colors">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://tiktok.com/@dynapound" target="_blank" class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition-colors">
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <a href="https://youtube.com/@dynapound" target="_blank" class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition-colors">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <form action="https://script.google.com/macros/s/AKfycbyEF_8cUcs8faYgVBLX2nCjZB4qoeIphvJlR_HVYs8pRxfIjXsFqKmrOKpg2bz0OXzU4Q/exec" method="POST" class="bg-white p-8 rounded-xl shadow-lg">
+            <input type="hidden" name="_next" value="https://dynapound.com/thank-you">
+            <div class="mb-6">
+              <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+              <input type="text" name="name" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" required>
+            </div>
+            <div class="mb-6">
+              <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+              <input type="email" name="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" required>
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+              <textarea name="message" id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" required></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg shadow-lg transition-all">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+
+  <svg id="eCKh6JqPkQn1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 889 200" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" project-id="a87b75a905ae4543ac0027e5b2d1e7a2" export-id="81a809fb972d43d4bffce54dd0be6826" cached="false" style="background-color:#f9fafb">
+    <g transform="matrix(1.176383-.159353 0.154646 1.141629-60.35732-97.347962)">
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 926.686121-494.856371)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 865.794785-452.374044)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 819.064226-429.716802)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 782.246212-382.986242)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 926.686121-494.856371)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <g transform="matrix(1.176383-.159353 0.154646 1.141629-167.979218 38.208598)">
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 926.686121-494.856371)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 865.794785-452.374044)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 819.064226-429.716802)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 782.246212-382.986242)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M79.4,20.6C50,20.6,56.66,79.4,20.6,79.4" transform="matrix(3.042402 12.420855-12.924592 3.165789 926.686121-494.856371)" fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </svg>
+
+  <footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">Dynapound</h3>
+          <p class="text-gray-400">We try our hardest and create the greatest.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+            <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+            <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Web Development</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Software Developement</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Digital Desighn</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Devs</h4>
+          <ul class="space-y-2">
+            <li><a href="https://alfieterry.co.uk" class="text-gray-400 hover:text-white transition-colors">Alfie Terry</a></li>
+            <li><a href="https://lawridarbyshire.co.uk" class="text-gray-400 hover:text-white transition-colors">Lawri Darbyshire</a></li>
+            <li><a href="https://benmaskell.co.uk" class="text-gray-400 hover:text-white transition-colors">Ben Maskell</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Tom Collis</a></li>
+          </ul>
+        </div>
+        <!--- div>
                     <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
                     <p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest updates.</p>
                     <form class="flex" action="https://formsubmit.co/contact@dynapound.com" method="POST">
@@ -589,68 +672,62 @@
                 <p>&copy; 2025 Dynapound. All rights reserved.   |   All images, unless otherwise stated, are owned by dynapound and/or its members.</p>
             </div>
         </div --->
-    </footer>
+  </footer>
 
-    <!-- Mobile Menu (hidden by default) -->
-    <div class="mobile-menu hidden md:hidden fixed inset-0 bg-white z-40 pt-16">
-        <div class="container mx-auto px-4 py-4">
-            <div class="flex flex-col space-y-2">
-                <a href="#" class="px-3 py-2 rounded-md text-base font-medium text-blue-600 bg-blue-50">Home</a>
-                <a href="#about" class="px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors">About</a>
-                <a href="#services" class="px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors">Services</a>
-                <a href="#contact" class="px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors">Contact</a>
-            </div>
-        </div>
+  <!-- Mobile Menu (hidden by default) -->
+  <div class="mobile-menu hidden md:hidden fixed inset-0 bg-white z-40 pt-16">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex flex-col space-y-2">
+        <a href="#" class="px-3 py-2 rounded-md text-base font-medium text-blue-600 bg-blue-50">Home</a>
+        <a href="#about" class="px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors">About</a>
+        <a href="#services" class="px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors">Services</a>
+        <a href="#contact" class="px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors">Contact</a>
+      </div>
     </div>
+  </div>
 
-    <!-- Scripts -->
-    <script>
-        // Initialize Jarallax
-        document.addEventListener('DOMContentLoaded', function() {
-            jarallax(document.querySelectorAll('[data-jarallax]'), {
-                speed: 0.2
+  <!-- Scripts -->
+  <script>
+    // Initialize Jarallax
+    document.addEventListener('DOMContentLoaded', function() {
+      jarallax(document.querySelectorAll('[data-jarallax]'), {
+        speed: 0.2
+      });
+      // Mobile menu toggle
+      const mobileMenuButton = document.querySelector('.mobile-menu-button');
+      const mobileMenu = document.querySelector('.mobile-menu');
+      mobileMenuButton.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+      });
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth'
             });
-
-            // Mobile menu toggle
-            const mobileMenuButton = document.querySelector('.mobile-menu-button');
-            const mobileMenu = document.querySelector('.mobile-menu');
-
-            mobileMenuButton.addEventListener('click', function() {
-                mobileMenu.classList.toggle('hidden');
-            });
-
-            // Smooth scrolling for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-
-                        // Close mobile menu if open
-                        if (!mobileMenu.classList.contains('hidden')) {
-                            mobileMenu.classList.add('hidden');
-                        }
-                    }
-                });
-            });
-
-            // Add shadow to navbar on scroll
-            window.addEventListener('scroll', function() {
-                const nav = document.querySelector('nav');
-                if (window.scrollY > 10) {
-                    nav.classList.add('shadow-md');
-                } else {
-                    nav.classList.remove('shadow-md');
-                }
-            });
+            // Close mobile menu if open
+            if (!mobileMenu.classList.contains('hidden')) {
+              mobileMenu.classList.add('hidden');
+            }
+          }
         });
-    </script>
+      });
+      // Add shadow to navbar on scroll
+      window.addEventListener('scroll', function() {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 10) {
+          nav.classList.add('shadow-md');
+        } else {
+          nav.classList.remove('shadow-md');
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>
