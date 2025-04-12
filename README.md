@@ -40,6 +40,7 @@ dynapound.com is a group of young developers that aspire to become big time devs
 We're early in developement and always open to support, collaboration, or feedback. If you're interested in working with us or helping us grow, feel free to reach out or fork one of our projects.
 
 ### Contact Emails
+- contact@dynapound.com
 - dynapound@gmail.com
 - talfie7243@gmail.com
 - lawri@lawridarbyshire.co.uk
