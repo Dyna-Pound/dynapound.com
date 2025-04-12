@@ -1,5 +1,5 @@
 
-![Dynapound Logo](https://assets.dynapound.com/assets/images/readme.png)
+![Dynapound Logo](site_logo.png)
 
 
 # dynapound.com
