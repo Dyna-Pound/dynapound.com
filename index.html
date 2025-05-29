@@ -52,29 +52,53 @@
 </head>
 
 <body class="font-inter antialiased text-gray-800">
-  <!-- Navigation -->
-  <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <div class="flex-shrink-0">
-          <span class="text-xl font-bold text-blue-600">Dynapound</span>
-        </div>
-        <div class="hidden md:block">
-          <div class="ml-10 flex items-baseline space-x-4">
-            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-blue-600 bg-blue-50">Home</a>
-            <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors">About</a>
-            <a href="#services" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors">Services</a>
-            <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors">Contact</a>
-          </div>
-        </div>
-        <div class="md:hidden">
-          <button class="mobile-menu-button p-2 rounded-md text-gray-600 hover:text-blue-600 hover:bg-blue-50 focus:outline-none">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-      </div>
+  
+  <nav class="max-w-5xl mx-auto flex items-center justify-between border-b-2 border-blue-300 px-4 py-3">
+    <div class="text-xl font-semibold text-blue-800 select-none">Dynapound</div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-10 text-blue-600 text-sm font-semibold">
+      <li class="cursor-pointer flex items-center space-x-2 hover:text-cornflowerblue transition">
+        <i class="fas fa-home"></i><span>Home</span>
+      </li>
+      <li class="cursor-pointer flex items-center space-x-2 hover:text-cornflowerblue transition">
+        <i class="fas fa-info-circle"></i><span>About</span>
+      </li>
+      <li class="cursor-pointer flex items-center space-x-2 hover:text-cornflowerblue transition">
+        <i class="fas fa-cogs"></i><span>Services</span>
+      </li>
+      <li class="cursor-pointer flex items-center space-x-2 hover:text-cornflowerblue transition">
+        <i class="fas fa-envelope"></i><span>Contact</span>
+      </li>
+    </ul>
+
+    <button class="hidden md:block bg-cornflowerblue hover:bg-blue-600 text-white px-5 py-2 rounded-md font-semibold transition">Login</button>
+
+    <!-- Mobile Hamburger -->
+    <div id="hamburger" class="md:hidden flex flex-col justify-center cursor-pointer space-y-1.5 w-6 h-6">
+      <span class="block w-full h-0.5 bg-blue-800 rounded transition-transform origin-left"></span>
+      <span class="block w-full h-0.5 bg-blue-800 rounded transition-opacity"></span>
+      <span class="block w-full h-0.5 bg-blue-800 rounded transition-transform origin-left"></span>
     </div>
   </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="fixed top-0 left-0 w-full h-full bg-white bg-opacity-95 backdrop-blur-sm z-50 flex flex-col items-center justify-center space-y-10 text-blue-800 text-lg font-semibold opacity-0 pointer-events-none transition-opacity">
+    <ul class="flex flex-col space-y-8 text-center">
+      <li class="cursor-pointer flex items-center justify-center space-x-3 hover:text-cornflowerblue transition text-2xl">
+        <i class="fas fa-home"></i><span>Home</span>
+      </li>
+      <li class="cursor-pointer flex items-center justify-center space-x-3 hover:text-cornflowerblue transition text-2xl">
+        <i class="fas fa-info-circle"></i><span>About</span>
+      </li>
+      <li class="cursor-pointer flex items-center justify-center space-x-3 hover:text-cornflowerblue transition text-2xl">
+        <i class="fas fa-cogs"></i><span>Services</span>
+      </li>
+      <li class="cursor-pointer flex items-center justify-center space-x-3 hover:text-cornflowerblue transition text-2xl">
+        <i class="fas fa-envelope"></i><span>Contact</span>
+      </li>
+    </ul>
+  </div>
 
   <!-- Hero Section with Jarallax -->
   <section class="relative h-screen flex items-center justify-center" data-jarallax data-speed="0.2">
