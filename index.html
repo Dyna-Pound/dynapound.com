@@ -971,6 +971,46 @@
       });
     });
   </script>
+  
+  <script>
+    // Animate panel content on scroll
+    const container = document.getElementById('scroll-container');
+    const panels = container.querySelectorAll('.panel');
+
+    function checkVisibility() {
+      const containerTop = container.scrollTop;
+      const containerHeight = container.clientHeight;
+
+      panels.forEach(panel => {
+        const panelTop = panel.offsetTop;
+        const panelContent = panel.querySelector('.panel-content');
+        if (containerTop + containerHeight * 0.6 > panelTop) {
+          panelContent.classList.add('visible');
+        } else {
+          panelContent.classList.remove('visible');
+        }
+      });
+    }
+
+    container.addEventListener('scroll', () => {
+      // Parallax effect on backgrounds
+      panels.forEach(panel => {
+        const bg = panel.querySelector('.panel-bg');
+        const rect = panel.getBoundingClientRect();
+        const offset = rect.top;
+        // Move background slower than scroll for parallax
+        bg.style.transform = `translateY(${offset * 0.3}px)`;
+      });
+      checkVisibility();
+    });
+
+    // Initial check
+    window.addEventListener('load', () => {
+      checkVisibility();
+      // Trigger scroll event to position backgrounds
+      container.dispatchEvent(new Event('scroll'));
+    });
+  </script>
 </body>
 
 </html>
