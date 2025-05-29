@@ -48,6 +48,22 @@
     .hover-scale:hover {
       transform: scale(1.05);
     }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f0f4ff;
+    }
+    a {
+      outline-offset: 2px;
+      outline-color: transparent;
+      outline-style: solid;
+      outline-width: 2px;
+      transition: outline-color 0.2s;
+    }
+    a:focus-visible {
+      outline-color: #6495ED; /* cornflowerblue */
+      outline-style: solid;
+    }
   </style>
 </head>
 
@@ -59,16 +75,16 @@
     <!-- Desktop Menu -->
     <ul class="hidden md:flex space-x-10 text-blue-600 text-sm font-semibold">
       <li class="cursor-pointer flex items-center space-x-2 hover:text-cornflowerblue transition">
-        <i class="fas fa-home"></i><span>Home</span>
+        <i class="fas fa-home"></i><a href="#">Home</a >
       </li>
       <li class="cursor-pointer flex items-center space-x-2 hover:text-cornflowerblue transition">
-        <i class="fas fa-info-circle"></i><span>About</span>
+        <i class="fas fa-info-circle"></i><a href="#about">About</a >
       </li>
       <li class="cursor-pointer flex items-center space-x-2 hover:text-cornflowerblue transition">
-        <i class="fas fa-cogs"></i><span>Services</span>
+        <i class="fas fa-cogs"></i><a href="#services">Services</a >
       </li>
       <li class="cursor-pointer flex items-center space-x-2 hover:text-cornflowerblue transition">
-        <i class="fas fa-envelope"></i><span>Contact</span>
+        <i class="fas fa-envelope"></i><a href="#contact">Contact</a >
       </li>
     </ul>
 
@@ -86,18 +102,19 @@
   <div id="mobileMenu" class="fixed top-0 left-0 w-full h-full bg-white bg-opacity-95 backdrop-blur-sm z-50 flex flex-col items-center justify-center space-y-10 text-blue-800 text-lg font-semibold opacity-0 pointer-events-none transition-opacity">
     <ul class="flex flex-col space-y-8 text-center">
       <li class="cursor-pointer flex items-center justify-center space-x-3 hover:text-cornflowerblue transition text-2xl">
-        <i class="fas fa-home"></i><span>Home</span>
+        <i class="fas fa-home"></i><a href="#">Home</a >
       </li>
       <li class="cursor-pointer flex items-center justify-center space-x-3 hover:text-cornflowerblue transition text-2xl">
-        <i class="fas fa-info-circle"></i><span>About</span>
+        <i class="fas fa-info-circle"></i><a href="#about">About</a >
       </li>
       <li class="cursor-pointer flex items-center justify-center space-x-3 hover:text-cornflowerblue transition text-2xl">
-        <i class="fas fa-cogs"></i><span>Services</span>
+        <i class="fas fa-cogs"></i><a href="#services">Services</a >
       </li>
       <li class="cursor-pointer flex items-center justify-center space-x-3 hover:text-cornflowerblue transition text-2xl">
-        <i class="fas fa-envelope"></i><span>Contact</span>
+        <i class="fas fa-envelope"></i><a href="#contact">Contact</a >
       </li>
     </ul>
+        <button id="closeMenu" class="absolute top-6 right-6 text-blue-800 hover:text-cornflowerblue text-3xl font-bold">&times;</button>
   </div>
 
   <!-- Hero Section with Jarallax -->
@@ -708,6 +725,43 @@
   </div>
 
   <!-- Scripts -->
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMenu = document.getElementById('closeMenu');
+
+    function toggleMenu() {
+      const isOpen = mobileMenu.classList.contains('opacity-100');
+      if (isOpen) {
+        mobileMenu.classList.remove('opacity-100');
+        mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+        // Animate hamburger back to original
+        hamburger.children[0].classList.remove('rotate-45', 'translate-y-1.5');
+        hamburger.children[1].classList.remove('opacity-0');
+        hamburger.children[2].classList.remove('-rotate-45', '-translate-y-1.5');
+        document.body.style.overflow = '';
+      } else {
+        mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+        mobileMenu.classList.add('opacity-100');
+        // Animate hamburger to X
+        hamburger.children[0].classList.add('rotate-45', 'translate-y-1.5');
+        hamburger.children[1].classList.add('opacity-0');
+        hamburger.children[2].classList.add('-rotate-45', '-translate-y-1.5');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    hamburger.addEventListener('click', toggleMenu);
+    closeMenu.addEventListener('click', toggleMenu);
+
+    // Close menu on window resize if desktop
+    window.addEventListener('resize', () => {
+      if(window.innerWidth >= 768 && mobileMenu.classList.contains('opacity-100')) {
+        toggleMenu();
+      }
+    });
+  </script>
   <script>
     // Initialize Jarallax
     document.addEventListener('DOMContentLoaded', function() {
