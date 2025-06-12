@@ -2,6 +2,8 @@
 ![Dynapound Logo](banner.png)
 
 
+# DYNAPOUND MEMBERS EDITING THE WEBSITE MUST USE [https://files.alfieterry.co.uk](files.alfieterry.co.uk)
+
 # dynapound.com
 
 **dynapound.com** is a startup led by a team of young developers aiming to innovate the way people interact with technology — starting with smart, seamless tools for everyday users.
