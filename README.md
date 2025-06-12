@@ -2,7 +2,7 @@
 ![Dynapound Logo](banner.png)
 
 
-# DYNAPOUND MEMBERS EDITING THE WEBSITE MUST USE [https://files.alfieterry.co.uk](files.alfieterry.co.uk)
+# DYNAPOUND MEMBERS EDITING THE WEBSITE MUST USE [THE FILE EDITOR](https://files.alfieterry.co.uk)
 
 # dynapound.com
 
